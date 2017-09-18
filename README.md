@@ -1,1 +1,1 @@
-# PrimeBoliche
+Este projeto foi desenvolvido para a disciplina de Engenharia de Sistemas de Informação da USP e consiste num sistema web responsivo para reservas de pistas de boliche.

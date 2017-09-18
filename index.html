@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prime Boliche</title>
+        
+        <!--define a viewport-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        
+        <!-- adicionar CSS Bootstrap-->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        
+        <!-- adicionar CSS Personalizado-->
+        <link href="css/style.css" rel="stylesheet" media="screen">
+    </head>
+    
+    <body>
+        <div class="navbar-large">
+            <nav class="navbar navbar-default navbar-fixed-top headerColor" role="navigation">
+                <div class="container largeLogo headerContainer">
+                    <div class="container-fluid">
+                        <div class="navbar-header ">
+                            <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#HeaderCollapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html"><img src="imgs/Logo-Nome.png" alt="logo" ></a>
+                        </div>
+                        <div id="HeaderCollapse" class="navbar-collapse collapse">
+                            <form class="navbar-right login-button-margin">
+                               <button type="button" data-toggle="modal" data-target="#login-modal" class="btn btn-danger login-button">Login</button>
+                            </form>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="reserva.html">Reservas</a></li>
+                                <li><a href="#ambiente">Ambiente</a></li>
+                                <li><a href="cadastro.html">Cadastre-se</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>        
+        </div>
+        
+        <div class="container back-container">
+            <div class="col-xs-12 back-container text-center">
+                <img src="imgs/boliche-slideshow.jpg" alt="fundo" class="center-block img-responsive back-img">
+            </div>
+        </div>
+        <br>
+        
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="loginmodal-container">
+                    <h1>Login to Your Account</h1><br>
+                    <form>
+                        <input type="text" name="user" placeholder="Username">
+                        <input type="password" name="pass" placeholder="Password">
+                        <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                    </form>
+                    <div class="login-help">
+                        <a href="cadastro.html">Primeiro Acesso</a> - <a href="#recuperarSenha">Esqueceu minha senha.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue diam diam, ut auctor nibh eleifend eu. Nam pretium nibh dapibus elit porta, id faucibus elit tincidunt. Suspendisse tincidunt odio sit amet velit convallis, vitae tempor elit convallis. Phasellus nisi nisi, tempor in leo in, rutrum imperdiet erat. Fusce condimentum, lorem sit amet venenatis convallis, nunc sem rutrum nunc, non accumsan augue felis et quam. Sed ut orci porta, condimentum felis gravida, rutrum nisl. Ut a tempor est. Maecenas non urna at metus consectetur ornare. Mauris ultrices consequat velit, vitae ultricies tortor ultricies non. Sed consectetur erat id maximus condimentum.
+                <br>
+                Pellentesque risus lectus, euismod id luctus vel, efficitur vel ligula. Mauris at dui ut ante congue accumsan non eget justo. Fusce cursus arcu nec purus congue, malesuada rutrum tellus aliquet. Cras condimentum rhoncus neque, in tempus elit bibendum eget. Curabitur vitae lectus vel orci suscipit convallis. Donec cursus orci sit amet blandit tempus. Sed sed elementum orci, ut convallis libero.
+                <br>
+                Aenean cursus ullamcorper lacus sed sagittis. Etiam eget vehicula dui, non sagittis nulla. In a arcu metus. Donec nec elit vel ex vulputate commodo. Vestibulum eget tempor sapien, at ultricies neque. Donec faucibus maximus odio eu tincidunt. Phasellus quis metus ornare orci facilisis ultrices eget non nulla. Suspendisse ornare ut nunc vel gravida. Nunc dapibus, magna in accumsan finibus, justo enim volutpat odio, ut maximus lacus odio a magna. Sed erat metus, pretium sed nunc dictum, viverra tempus dui. Nulla at porta elit, vel cursus neque. Proin dapibus semper viverra. Quisque tempus tortor id nulla dictum consectetur.
+                <br>
+                Ut neque risus, placerat eget scelerisque ut, posuere sit amet odio. Nullam varius, nisi vulputate pulvinar commodo, justo mi ullamcorper eros, et pellentesque nulla eros vitae ex. Aenean venenatis quam lectus, id interdum erat volutpat vitae. Vivamus ut lorem in metus sagittis vulputate vitae nec nibh. Nam sollicitudin ante ut ipsum congue, ut placerat lorem tempus. Fusce eu dignissim eros, nec consectetur diam. Donec eleifend gravida mauris, eget tempus quam mattis quis. Vestibulum rhoncus tellus vitae consectetur fringilla. Phasellus id tincidunt dolor. Nunc gravida lacinia quam vel elementum. Vivamus non dolor pulvinar dui condimentum accumsan porttitor at eros. Ut convallis mauris quis ultrices elementum. Sed eget viverra mi. Duis sed porta nisl, ut sollicitudin turpis. Integer nec vestibulum quam, vel tristique justo. Pellentesque turpis sapien, faucibus vitae elit quis, consequat vulputate leo.
+                <br>
+                Maecenas nec convallis quam, sed facilisis tortor. Etiam eget aliquet dolor, non sagittis quam. Sed convallis dolor commodo vulputate auctor. Praesent sit amet ornare lacus. Phasellus ac tellus in magna ultrices venenatis id condimentum nibh. In tempus mollis magna, ut tincidunt eros euismod nec. Aenean in eros erat. Phasellus nec gravida est. Nullam gravida turpis maximus placerat finibus.
+                <br>
+                Praesent gravida nulla a cursus iaculis. Mauris non congue enim. Maecenas sagittis ipsum nec velit finibus, quis facilisis ex condimentum. Fusce eget felis consequat, fermentum felis nec, facilisis metus. Cras ultrices varius arcu vel pellentesque. Aliquam a mi et turpis hendrerit gravida eget non mauris. Phasellus nec bibendum est. Aenean vel finibus metus, sit amet porttitor nisl. Nulla porttitor, nibh mattis ultrices varius, ante orci euismod erat, eu commodo nunc ante ac augue.
+                <br>
+                Praesent efficitur, velit sed molestie aliquam, libero felis varius quam, vitae dictum ex lorem ut lacus. Donec convallis consectetur lobortis. Morbi suscipit velit eget lorem aliquet interdum in vel purus. Nam pulvinar blandit lacinia. Phasellus dignissim, diam scelerisque imperdiet tincidunt, arcu metus varius est, et feugiat diam turpis nec ipsum. Vivamus mattis turpis eu nisl tristique tincidunt. Nam ultricies feugiat tincidunt.
+                <br>
+                In varius, tortor quis laoreet tempor, libero ipsum pretium purus, et mattis orci lectus non magna. Curabitur magna purus, facilisis eu sem ut, scelerisque tempus ante. In eget pharetra nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer pharetra lacus et fermentum tristique. Morbi scelerisque iaculis nibh, vel elementum ex iaculis sed. In ipsum massa, facilisis a blandit vitae, rutrum eget sem. Donec nec efficitur erat. Maecenas finibus quam quis ultrices blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc ornare porta dapibus.
+                <br>
+                Duis volutpat convallis luctus. Suspendisse ultricies varius augue eget pretium. Maecenas aliquet velit sit amet neque luctus mattis. Aenean ac fringilla lectus. Integer rhoncus risus elit, id efficitur ex iaculis ut. Nam maximus metus id neque pretium, eu faucibus velit mattis. Vestibulum lacinia scelerisque euismod. Nunc aliquam, ipsum id posuere auctor, metus libero mollis massa, vel semper erat mauris eget tellus. Suspendisse tincidunt volutpat placerat. Proin nec eros ut sem porta vulputate. Vestibulum volutpat magna justo, dictum viverra ipsum malesuada vitae. Donec vel urna dui.
+                <br>
+                Sed tincidunt sollicitudin risus, sit amet efficitur risus pulvinar sed. Praesent fringilla, velit quis efficitur volutpat, augue nisi elementum turpis, vel cursus lectus libero sed sapien. Aenean consectetur turpis consectetur ultrices aliquam. Etiam quis pellentesque augue. Quisque dictum leo purus, ut lacinia quam malesuada vel. Morbi mollis neque vitae nulla eleifend cursus. Suspendisse et erat in libero rhoncus suscipit eget id metus. Quisque id dui nec odio mollis egestas. Quisque dignissim posuere ultrices. Suspendisse potenti. Donec bibendum tincidunt faucibus. Donec egestas risus a laoreet gravida. Aenean at semper ante, id imperdiet sapien. Proin nec aliquam risus. Aenean pretium tincidunt leo, in convallis lectus porttitor eget. Ut magna elit, porttitor quis aliquam non, cursus quis mi.
+                <br>
+                Donec vel mollis augue, quis sodales metus. Sed rutrum accumsan lectus. Sed accumsan magna sed arcu vehicula hendrerit. Praesent vitae mauris quis metus ullamcorper placerat. Aliquam nibh ante, fermentum eget iaculis quis, fringilla quis urna. Nulla nec lobortis odio. Pellentesque orci risus, tincidunt id nisi ac, posuere pulvinar nulla. Nulla convallis sollicitudin sagittis. Nunc posuere justo eget metus tempus, non pulvinar justo tincidunt. Phasellus aliquam aliquet augue blandit mattis. Cras blandit sollicitudin rutrum.
+                <br>
+                Aliquam imperdiet magna eget tortor egestas volutpat. Ut non malesuada diam. Donec pretium mauris et ex faucibus convallis. Vivamus congue dignissim mauris, a aliquet nulla. Donec nulla massa, lobortis ac ex non, viverra feugiat erat. Fusce massa ligula, ultrices finibus laoreet sit amet, volutpat ut augue. Praesent id turpis at mauris volutpat tincidunt quis nec massa. Duis id purus odio.
+                <br>
+                Cras id nibh at orci fermentum maximus quis eu est. Quisque aliquam est ac enim vulputate, ac viverra massa auctor. Quisque bibendum ligula et lectus dapibus accumsan. Proin nibh massa, vehicula vel quam at, efficitur rutrum nibh. Ut dolor est, fringilla a nulla at, consectetur finibus libero. Fusce porta tellus ut nulla semper, non aliquam elit porttitor. Aenean sagittis velit sem, et auctor dolor vulputate sit amet. Nunc facilisis tellus eget augue condimentum aliquam.
+                <br>
+                Mauris eros orci, volutpat sed libero in, efficitur scelerisque urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed pretium risus ut metus volutpat pellentesque. Etiam ut auctor arcu. Sed nec metus sit amet eros vehicula consectetur eu vitae tortor. Cras nibh eros, scelerisque eu porta at, gravida non nibh. Nullam mattis quam dapibus massa posuere malesuada. Proin et mattis dui. Maecenas feugiat pretium enim, vel aliquet neque vestibulum mattis. Suspendisse aliquam, tortor non faucibus laoreet, tortor nisi congue erat, a molestie risus justo non felis.
+                <br>
+                Donec tincidunt dui diam, ut fermentum augue lacinia eu. Phasellus varius leo et ante aliquam, non condimentum sem viverra. Curabitur a dapibus turpis, eget ultrices metus. Proin et dignissim tortor. Nunc ac odio tempor, placerat metus vel, sagittis sapien. Phasellus placerat hendrerit metus at maximus. Nullam ornare viverra purus, ac rutrum sem iaculis ac. Nunc arcu metus, elementum eu accumsan id, facilisis et risus. Suspendisse lacinia eleifend interdum. Etiam quis lorem ipsum. Sed tincidunt lacus vestibulum, tempor turpis a, tincidunt lacus. Vivamus convallis vel eros nec aliquet. </p> 
+                </div>
+            </div>
+        </div>
+        <br>
+        
+        <footer class=headerColor>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6"> 
+                        <address>
+                            <h3 class="black">Contato</h3>
+                            <strong>Prime Boliche</strong><br/>
+                            Av. Paulista, 1234 <br>
+                            São Paulo - SP <br>
+                            Telefone: (11) 9876-54321 <br>
+                            E-mail: <a href="mailto:contato@primeboliche.com.br">contato@primeboliche.com.br</a>
+                        </address>
+                    </div>
+                    <div class="col-sm-6 text-center-mobile">
+                        <h3 class="black">Horário de Funcionamento</h3>
+                        <div class="row opening-hours">
+                            <div class="col-sm-6 text-center-mobile">
+                                <h5 class="black">Segunda - Sexta</h5>
+                                <h3 class="black">9:00 - 22:00</h3>
+                            </div>
+                            <div class="col-sm-6 text-center-mobile">
+                                <h5 class="black">Sábado - Domingo</h5>
+                                <h3 class="black">9:00 - 23:59</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

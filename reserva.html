@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prime Boliche</title>
+        
+        <!--define a viewport-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        
+        <!-- adicionar CSS Bootstrap-->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        
+        <!-- adicionar CSS Personalizado-->
+        <link href="css/style.css" rel="stylesheet" media="screen">
+    </head>
+    
+    <body class="backgroundColor">
+        <div class="navbar-large">
+            <nav class="navbar navbar-default navbar-fixed-top headerColor" role="navigation">
+                <div class="container largeLogo headerContainer">
+                    <div class="container-fluid">
+                        <div class="navbar-header ">
+                            <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#HeaderCollapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html"><img src="imgs/Logo-Nome.png" alt="logo" ></a>
+                        </div>
+                        <div id="HeaderCollapse" class="navbar-collapse collapse">
+                            <form class="navbar-right login-button-margin">
+                               <button type="button" class="btn btn-danger login-button">Login</button>
+                            </form>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="reserva.html">Reservas</a></li>
+                                <li><a href="#ambiente">Ambiente</a></li>
+                                <li><a href="cadastro.html">Cadastre-se</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>        
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="text-center">Consulta de Preços e Reservas</h1>
+                    <hr/>
+                    <form>
+                        <div class="form-group col-xs-6">
+                            <label for="data">Data:</label>
+                            <select class="form-control" id="res_dia">
+                                <option>Terça-Feira, 19/09/2017</option>
+                                <option>Quarta-Feira, 20/09/2017</option>
+                                <option>Quinta-Feira, 21/09/2017</option>
+                                <option>Sexta-Feira, 22/09/2017</option>
+                                <option>Sábado-Feira, 23/09/2017</option>
+                                <option>Domingo-Feira, 24/09/2017</option>
+                                <option>Segunda-Feira, 25/09/2017</option>
+                                <option>Terça-Feira, 26/09/2017</option>
+                                <option>Quarta-Feira, 27/09/2017</option>
+                                <option>Quinta-Feira, 28/09/2017</option>
+                                <option>Sexta-Feira, 29/09/2017</option>
+                                <option>Sábado-Feira, 30/09/2017</option>
+                                <option>Domingo-Feira, 01/10/2017</option>
+                                <option>Segunda-Feira, 02/10/2017</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group col-xs-6">
+                            <label for="data">Horário:</label>
+                            <select class="form-control" id="res_horario">
+                                <option>09:00 horas</option>
+                                <option>10:00 horas</option>
+                                <option>11:00 horas</option>
+                                <option>12:00 horas</option>
+                                <option>13:00 horas</option>
+                                <option>14:00 horas</option>
+                                <option>15:00 horas</option>
+                                <option>16:00 horas</option>
+                                <option>17:00 horas</option>
+                                <option>18:00 horas</option>
+                                <option>19:00 horas</option>
+                                <option>20:00 horas</option>
+                                <option>21:00 horas</option>
+                                <option>22:00 horas</option>
+                                <option>23:00 horas</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr/>
+                
+                <!--
+                <label class="checkbox-inline">
+                    <input type="checkbox" id="pista01" value="1"> 1
+                </label>
+                -->
+                
+            <div class="row">
+                    <form method="get">
+                        <h3 class="text-center gray">Escolha uma Pista:</h3><br>
+                        <div class="form-group col-xs-6 col-sm-3 col-md-2 padding5">
+                            <h5 class="text-center gray"><strong>Pista 1</strong></h5>
+                            <label class="btn btn-danger">
+                                <img src="imgs/pista.jpg" alt="figuraPista01" class="img-thumbnail img-check"><input type="checkbox" name="pista01" id="pista_id" value="1" class="hidden" autocomplete="off">
+                            </label>
+                        </div>
+                        <div class="form-group col-xs-6 col-sm-3 col-md-2 padding5">
+                            <h5 class="text-center gray"><strong>Pista 2</strong></h5>
+                            <label class="btn btn-danger">
+                                <img src="imgs/pista.jpg" alt="figuraPista02" class="img-thumbnail img-check"><input type="checkbox" name="pista01" id="pista_id" value="2" class="hidden" autocomplete="off">
+                            </label>
+                        </div>
+                        <div class="form-group col-xs-6 col-sm-3 col-md-2 padding5">
+                            <h5 class="text-center gray"><strong>Pista 3</strong></h5>
+                            <label class="btn btn-danger">
+                                <img src="imgs/pista.jpg" alt="figuraPista03" class="img-thumbnail img-check"><input type="checkbox" name="pista01" id="pista_id" value="3" class="hidden" autocomplete="off">
+                            </label>
+                        </div>
+                        <div class="form-group col-xs-6 col-sm-3 col-md-2 padding5">
+                            <h5 class="text-center gray"><strong>Pista 4</strong></h5>
+                            <label class="btn btn-danger">
+                                <img src="imgs/pista.jpg" alt="figuraPista04" class="img-thumbnail img-check"><input type="checkbox" name="pista01" id="pista_id" value="4" class="hidden" autocomplete="off">
+                            </label>
+                        </div>
+                        <div class="form-group col-xs-6 col-sm-3 col-md-2 padding5">
+                            <h5 class="text-center gray"><strong>Pista 5</strong></h5>
+                            <label class="btn btn-danger">
+                                <img src="imgs/pista.jpg" alt="figuraPista05" class="img-thumbnail img-check"><input type="checkbox" name="pista01" id="pista_id" value="5" class="hidden" autocomplete="off">
+                            </label>
+                        </div>
+                        <div class="form-group col-xs-6 col-sm-3 col-md-2 padding5">
+                            <h5 class="text-center gray"><strong>Pista 6</strong></h5>
+                            <label class="btn btn-danger">
+                                <img src="imgs/pista.jpg" alt="figuraPista06" class="img-thumbnail img-check"><input type="checkbox" name="pista01" id="pista_id" value="6" class="hidden" autocomplete="off">
+                            </label>
+                        </div>
+                        <div class="form-group col-xs-6 col-sm-3 col-md-2 padding5">
+                            <h5 class="text-center gray"><strong>Pista 7</strong></h5>
+                            <label class="btn btn-danger">
+                                <img src="imgs/pista.jpg" alt="figuraPista07" class="img-thumbnail img-check"><input type="checkbox" name="pista01" id="pista_id" value="7" class="hidden" autocomplete="off">
+                            </label>
+                        </div>
+                        <div class="form-group col-xs-6 col-sm-3 col-md-2 padding5">
+                            <h5 class="text-center gray"><strong>Pista 8</strong></h5>
+                            <label class="btn btn-danger">
+                                <img src="imgs/pista.jpg" alt="figuraPista08" class="img-thumbnail img-check"><input type="checkbox" name="pista01" id="pista_id" value="8" class="hidden" autocomplete="off">
+                            </label>
+                        </div>
+                        <div class="form-group col-xs-6 col-sm-3 col-md-2 padding5">
+                            <h5 class="text-center gray"><strong>Pista 9</strong></h5>
+                            <label class="btn btn-danger">
+                                <img src="imgs/pista.jpg" alt="figuraPista09" class="img-thumbnail img-check"><input type="checkbox" name="pista01" id="pista_id" value="9" class="hidden" autocomplete="off">
+                            </label>
+                        </div>
+                        <div class="form-group col-xs-6 col-sm-3 col-md-2 padding5">
+                            <h5 class="text-center gray"><strong>Pista 10</strong></h5>
+                            <label class="btn btn-danger">
+                                <img src="imgs/pista.jpg" alt="figuraPista10" class="img-thumbnail img-check"><input type="checkbox" name="pista01" id="pista_id" value="10" class="hidden" autocomplete="off">
+                            </label>
+                        </div>
+                        <div class="form-group col-xs-6 col-sm-3 col-md-2 padding5">
+                            <h5 class="text-center gray"><strong>Pista 11</strong></h5>
+                            <label class="btn btn-danger">
+                                <img src="imgs/pista.jpg" alt="figuraPista11" class="img-thumbnail img-check"><input type="checkbox" name="pista01" id="pista_id" value="11" class="hidden" autocomplete="off">
+                            </label>
+                        </div>
+                        <div class="form-group col-xs-6 col-sm-3 col-md-2 padding5">
+                            <h5 class="text-center gray"><strong>Pista 12</strong></h5>
+                            <label class="btn btn-danger">
+                                <img src="imgs/pista.jpg" alt="figuraPista12" class="img-thumbnail img-check"><input type="checkbox" name="pista01" id="pista_id" value="12" class="hidden" autocomplete="off">
+                            </label>
+                        </div>
+                </form>
+            </div>
+            <hr/>
+            
+            <div class="row">
+                <div class="form-group col-xs-12">
+                    <label class="col-xs-1 control-label dark-yellow"><h2><strong>Preço: </strong></h2></label>
+                    <div class="col-xs-2">
+                        <p class="text-left"><h2><strong>  R$100,00</strong></h2></p>
+                    </div>
+                    <div class="col-xs-offset-7 col-xs-2">
+                        <button type="submit" class="btn btn-success btn-lg">Confirmar Reserva</button>
+                    </div>
+                </div>
+                
+            </div>
+                
+            
+        </div>
+        <br>
+        <footer class=headerColor>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6"> 
+                        <address>
+                            <h3 class="black">Contato</h3>
+                            <strong>Prime Boliche</strong><br/>
+                            Av. Paulista, 1234 <br>
+                            São Paulo - SP <br>
+                            Telefone: (11) 9876-54321 <br>
+                            E-mail: <a href="mailto:contato@primeboliche.com.br">contato@primeboliche.com.br</a>
+                        </address>
+                    </div>
+                    <div class="col-sm-6 text-center-mobile">
+                        <h3 class="black">Horário de Funcionamento</h3>
+                        <div class="row opening-hours">
+                            <div class="col-sm-6 text-center-mobile">
+                                <h5 class="black">Segunda - Sexta</h5>
+                                <h3 class="black">9:00 - 22:00</h3>
+                            </div>
+                            <div class="col-sm-6 text-center-mobile">
+                                <h5 class="black">Sábado - Domingo</h5>
+                                <h3 class="black">9:00 - 23:59</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
